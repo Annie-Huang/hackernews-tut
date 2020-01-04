@@ -1,0 +1,9 @@
+https://www.youtube.com/watch?v=LN6Dol_fX0w&t=129s
+https://github.com/Annie-Huang/hackernews-tut
+
+=====================================================
+C:\react>create-react-app hackernews-tut
+
+
+
+
