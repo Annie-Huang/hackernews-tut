@@ -1,7 +1,23 @@
 https://www.youtube.com/watch?v=LN6Dol_fX0w&t=129s
 https://github.com/Annie-Huang/hackernews-tut
 
-=====================================================
+https://github.com/HackerNews/API
+https://hacker-news.firebaseio.com/v0/item/8863.json?print=pretty
+https://news.ycombinator.com/
+
+==============================================================================
+Requirements:
+New, Top and Best Stories
+/v0/topstories
+/v0/newstories      << we will make calls on this one.
+/v0/beststories
+https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty
+We want to retrun two per scroll
+
+Get one, and then make calls to Items, /v0/item/<id>.
+https://hacker-news.firebaseio.com/v0/item/8863.json?print=pretty
+
+
 C:\react>create-react-app hackernews-tut
 
 
