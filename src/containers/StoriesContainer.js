@@ -2,9 +2,11 @@ import React, {useEffect, useState} from 'react';
 import {getStoryIds, getStory} from '../services/hnApi';
 import {Story} from "../components/Story";
 import {GlobalStyle, StoriesContainerWrapper} from "../styles/StoriesContainerStyles";
+import {useInfiniteScroll} from "../hooks/useInfiniteScroll";
 
 export const StoriesContainer = () => {
     const [storyIds, setStoryIds] = useState([]);
+    const test = useInfiniteScroll();
 
     useEffect(() => {
         getStoryIds().then(data => setStoryIds(data));
