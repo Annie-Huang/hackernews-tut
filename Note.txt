@@ -20,6 +20,6 @@ https://hacker-news.firebaseio.com/v0/item/8863.json?print=pretty
 
 C:\react>create-react-app hackernews-tut
 C:\react\hackernews-tut>npm install axios
-
+C:\react\hackernews-tut>npm install styled-components
 
 
