@@ -30,5 +30,7 @@ export const useInfiniteScroll = () => {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+
+    return {count};
 };
 
