@@ -23,12 +23,10 @@ test('renders the application', async () => {
     getStory.mockImplementation(() => Promise.resolve(singularStory));
     getStoryIds.mockImplementation(() => Promise.resolve(storyIds));
 
-    await act(async () => {
-        const {getByText, queryByTestId}  = render(<App/>);
-        await waitForElement(() => [
-            expect(getByText('Hacker News Stories')).toBeTruthy(),
-            expect(getByText('Tarnished: Google Responds')).toBeTruthy(),
-            expect(queryByTestId('story-by').textContent).toEqual('By: Karl Hadwen')
-        ]);
-    });
+    const {getByText, queryByTestId}  = render(<App/>);
+    await waitForElement(() => [
+        expect(getByText('Hacker News Stories')).toBeTruthy(),
+        expect(getByText('Tarnished: Google Responds')).toBeTruthy(),
+        expect(queryByTestId('story-by').textContent).toEqual('By: Karl Hadwen')
+    ]);
 });
