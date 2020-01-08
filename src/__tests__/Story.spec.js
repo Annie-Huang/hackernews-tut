@@ -15,6 +15,7 @@ jest.mock('../services/hnApi', () => ({
 
 test('renders the story component with content', async () => {
     getStory.mockImplementation(() => Promise.resolve(singularStory));
+    // console.log('getStory', getStory);
 
     const {getByText, getByTestId}  = render(<Story storyId="1" />);
     // getByTestId: it will throw an error if it returns false, so you don't need expect to surround it.
