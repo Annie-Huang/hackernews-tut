@@ -38,7 +38,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:single": "react-scripts test src/__tests__/Story.spec.js",
     "test:coverage": "react-scripts test --coverage --watchAll=false",
+    "test:single:coverage": "react-scripts test src/__tests__/Story.spec.js --coverage",
     "eject": "react-scripts eject"
   },
   "browserslist": {
